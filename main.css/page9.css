@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f6f6;
+}
+
+/* Header styles */
+header {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+       /* Ensure header stays above other content */
+}
+    
+ header p {
+    font-size: 1.5em;
+    font-weight: 600;
+ }
+
+
+/* Main styles */
+main {
+    padding: 80px 20px 60px; /* Adjust padding for header and footer */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* First div styles */
+.first-div {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.first-div img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.first-div p {
+    margin: 10px 0;
+    font-size: small;
+    color: #333;
+}
+
+.first-div .holder-name {
+    font-size: 18px;
+    color: black;
+    font-weight: 550;
+}
+
+/* Second div styles */
+.second-div {
+    width: 100%;
+    max-width: 600px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.second-div ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.second-div li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+.second-div li p {
+    margin: 0;
+}
+
+.second-div li span {
+    color: #2196F3;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* Toggle switch styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+.slider.round {
+    border-radius: 20px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Footer styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f6f6;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer button {
+    width: 50%;
+    padding: 10px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    /* Adjust header styles for smaller screens */
+    header {
+        padding: 5px 10px;
+    }
+
+    /* Adjust main content styles for smaller screens */
+    main {
+        padding: 60px 10px 40px;
+    }
+
+    /* Adjust footer button styles for smaller screens */
+    footer button {
+        width: 80%;
+    }
+}

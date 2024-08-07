@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+  padding: 1% 5%;
+  border-bottom: 1px solid #c7c2c2;
+}
+
+.account-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 0;
+}
+
+.account-details p {
+   margin-top: 1%;  
+}
+
+.account-details p span {
+    text-transform: uppercase;
+    font-size: smaller;
+    margin-right: 5px;
+}
+
+.mini-statement {
+    margin-top: 19%; /* Adjusted to make space for the fixed header */
+    padding: 20px;
+    padding-bottom: 10%;
+}
+
+h2 {
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
+.statement-list {
+    margin-top: 10px;
+}
+
+.statement-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.statement-item.debit {
+    color: red;
+}
+
+.statement-item.credit {
+    color: green;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.request-button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Full width for the button */
+}
