@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 5%;
+    background-color: #F0F0F0; /* Light gray background */
+}
+
+.bank-info {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(117, 160, 209);
+}
+
+.bank-info div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    color: #fff;
+}
+
+.bank-info p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gratitude {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 50px;
+    background-color: #333;
+}
+
+.moving-text {
+    position: absolute;
+    white-space: nowrap;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    animation: moveText 10s linear infinite, changeColor 10s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes changeColor {
+    0% { color: rgb(117, 160, 209); } /* Blue */
+    50% { color: rgb(225, 225, 10); } /* Yellow */
+    100% { color: rgb(117, 160, 209); } /* Blue */
+}
+
+.calendar {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
