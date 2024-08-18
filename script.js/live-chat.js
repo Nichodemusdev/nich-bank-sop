@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function getResponse(userMessage) {
         // Simple simulated responses
         if (userMessage.toLowerCase().includes('hello')) {
-            return "Hi there! How can I assist you today?";
+            return "Hi chukwu stephen! How can I assist you today?";
         } else if (userMessage.toLowerCase().includes('help')) {
             return "Sure, I'm here to help. What do you need assistance with?";
         } else {
